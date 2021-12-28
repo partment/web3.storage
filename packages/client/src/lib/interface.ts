@@ -81,7 +81,7 @@ export interface Filelike {
    * Returns a ReadableStream which upon reading returns the data contained
    * within the File.
    */
-  stream: () => ReadableStream
+  stream: () => Iterable<ReadableStream>
 }
 
 export type PutOptions = {
